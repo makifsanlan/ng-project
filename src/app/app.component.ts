@@ -6,8 +6,9 @@ import { ProductComponent } from './components/product/product.component';
 import { CategoryComponent } from './components/category/category.component';
 import { NaviComponent } from './components/navi/navi.component';
 import { VatAddedPipe } from './pipes/vat-added.pipe';
-import { FormsModule } from '@angular/forms';
+import { FormsModule , ReactiveFormsModule} from '@angular/forms';
 import { FilterPipePipe } from './pipes/filter-pipe.pipe';
+
 
 
 
@@ -17,7 +18,7 @@ import { FilterPipePipe } from './pipes/filter-pipe.pipe';
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule,RouterOutlet,ProductComponent, CategoryComponent,
-     NaviComponent,RouterModule,VatAddedPipe,FormsModule,FilterPipePipe ], 
+     NaviComponent,RouterModule,VatAddedPipe,FormsModule,FilterPipePipe, ReactiveFormsModule , ], 
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
