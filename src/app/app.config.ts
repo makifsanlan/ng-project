@@ -22,7 +22,7 @@ export const appConfig: ApplicationConfig = {
     }),
     {
       provide: HTTP_INTERCEPTORS,
-      useValue: AuthInterceptor,
+      useClass: AuthInterceptor,
       multi: true  // Birden fazla interceptor eklenebilmesi için
     }
   ]
