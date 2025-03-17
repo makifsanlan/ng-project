@@ -1,3 +1,5 @@
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { CartItem } from '../../models/cartItem';
 import { CartService } from '../../services/cart.service';
@@ -8,7 +10,7 @@ import { ToastrService } from 'ngx-toastr';
 @Component({
   selector: 'app-cart-summary',
   standalone: true,
-  imports: [  ],
+  imports: [ CommonModule ],
   templateUrl: './cart-summary.component.html',
   styleUrl: './cart-summary.component.css'
 })
